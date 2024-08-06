@@ -11,7 +11,13 @@ const exp = require('constants');
 const { type } = require('os');
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+    {
+        origin: 'http://localhost:3000',
+        credentials: true,
+        methods: ['GET', 'POST'],
+    }
+));
 
 // database connection with mongo db
 mongoose.connect("mongodb+srv://shubham0011ghimire:Kurenai@cluster0.v5vddt8.mongodb.net/e-commerce");
