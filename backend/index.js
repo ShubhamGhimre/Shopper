@@ -13,7 +13,7 @@ const { type } = require('os');
 app.use(express.json());
 app.use(cors(
     {
-        origin: 'http://localhost:3000',
+        origin: 'https://shopper-275du2jle-shubham-ghimires-projects.vercel.app/',
         credentials: true,
         methods: ['GET', 'POST'],
     }
