@@ -24,7 +24,7 @@ mongoose.connect("mongodb+srv://shubham0011ghimire:Kurenai@cluster0.v5vddt8.mong
 
 // API Creation
 
-app.get('https://shopper-275du2jle-shubham-ghimires-projects.vercel.app/', (req, res) => {
+app.get('/', (req, res) => {
     res.send("Express app is Running");
 })
 
